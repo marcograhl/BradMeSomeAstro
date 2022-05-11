@@ -26,3 +26,5 @@ vscode:
   - lucax88x.codeacejumper
   - gitkraken.gitkraken-authentication
   - astro-build.astro-vscode
+  - vscodevim.vim
+  - bradlc.vscode-tailwindcss
