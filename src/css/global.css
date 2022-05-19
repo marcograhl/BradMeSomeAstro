@@ -1,17 +1,16 @@
 @import-glob 'blocks/*.css';
 @import-glob 'compositions/*.css';
 @import-glob 'utilities/*.css';
+@import-glob 'global/*.css';
 
-@import 'tailwindcss/base';
 
-@import 'global/reset.css';
-@import 'global/fonts.css';
 
-@import 'tailwindcss/components';
-
+/* @import 'global/reset.css';
+@import 'global/fonts.css'; 
 @import 'global/variables.css';
 @import 'global/global-styles.css';
-@import 'tailwindcss/utilities';
+*/
+
 
 
 
