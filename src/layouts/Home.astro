@@ -1,0 +1,13 @@
+---
+import BaseLayout from '$layouts/BaseLayout.astro'
+// if you have an markdownfile with the layout reference, than everything
+// inside the markdownfile (not the Frontmatter), gets passed inside the
+// layout component via slot. Here we have another astro component which
+// is defines the Page layout, here is where the meta data is, maybe the
+// navigation -> things that every page has in common
+
+---
+
+<BaseLayout>
+    <slot />
+</BaseLayout>
