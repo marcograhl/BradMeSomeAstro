@@ -11,10 +11,10 @@ export default defineConfig({
 			alias: {
 				$src: path.resolve('./src'),
 				$components: path.resolve('./src/components'),
-				$layouts: path.resolve('./src/_includes/layouts'),
-				$partials: path.resolve('./src/_includes/partials'),
+				$layouts: path.resolve('./src/layouts'),
+				$partials: path.resolve('./src/partials'),
 				$assets: path.resolve('./src/assets'),
-				$data: path.resolve('./src/_data'),
+				$data: path.resolve('./src/data'),
 				$work: path.resolve('./src/work'),
 			},
 		},
