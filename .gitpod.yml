@@ -16,14 +16,11 @@ ports:
 
 vscode:
   extensions:
-  - astro-build.astro-vscode
-  - GitHub.copilot
   - phoenisx.cssvar
   - csstools.postcss
   - eamodio.gitlens-insiders
   - mhutchie.git-graph
   - formulahendry.auto-complete-tag
-  - lucax88x.codeacejumper
   - gitkraken.gitkraken-authentication
   - astro-build.astro-vscode
   - vscodevim.vim
