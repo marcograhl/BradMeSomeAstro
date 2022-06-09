@@ -6,7 +6,7 @@ summary: 'Give the browser some solid rules and hints, then let it make the righ
 metaDesc: 'Key principles using modern CSS, fluid type, fluid space, flexible layout and progressive enhancement will help you to build better front-ends that work for everyone.'
 principles:
   title: 'Key Foundations & Principles'
-  quote: 'Stick to those principles and making excellent websites that work for everyone suddenly becomes much, much easier.'
+  quote: 'Stick to those principles and making excellent websites that work for everyone suddenly becomes much, much easier. Testing'
   items:
     - title: 'Modern CSS with Methodologies'
       summary: |

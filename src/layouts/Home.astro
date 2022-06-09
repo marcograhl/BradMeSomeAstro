@@ -6,16 +6,25 @@ import BaseLayout from '$layouts/BaseLayout.astro'
 // is defines the Page layout, here is where the meta data is, maybe the
 // navigation -> things that every page has in common
 
+const {content} = Astro.props
+const {principles} = content
 ---
 
 <BaseLayout>
-    <slot />
     <main>
         <header>
-            <div>
-                <h1>test</h1>
-                <p>test2</p>
-            </div>
+            <h1>{ content.title }</h1>
+            <p>{ content.summary }</p>
         </header>
     </main>
+    <article>
+        <h2>{ principles.title }</h2>
+        <ul>
+            {principles.items.map(({title,summary})=>(
+                <h2>{title}</h2>
+                <p>{summary}</p>
+            ) )}
+        </ul>
+    </article>
+    <slot />
 </BaseLayout>
