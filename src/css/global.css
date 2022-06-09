@@ -1,5 +1,5 @@
-@import-glob 'blocks/*.css';
-@import-glob 'compositions/*.css';
+/* @import-glob 'blocks/*.css'; */
+/* @import-glob 'compositions/*.css'; */
 @import-glob 'utilities/*.css';
 @import-glob 'global/*.css';
 
