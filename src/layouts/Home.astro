@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '$layouts/BaseLayout.astro'
+import Curve from '$includes/Curve.astro'
+import { Icon } from 'astro-icon';
 // if you have an markdownfile with the layout reference, than everything
 // inside the markdownfile (not the Frontmatter), gets passed inside the
 // layout component via slot. Here we have another astro component which
@@ -7,14 +9,16 @@ import BaseLayout from '$layouts/BaseLayout.astro'
 // navigation -> things that every page has in common
 
 const {content} = Astro.props
-const {principles} = content
+const {principles, tools} = content
+console.log(tools.items)
 ---
-
+    
 <BaseLayout>
     <main>
         <header>
             <h1>{ content.title }</h1>
             <p>{ content.summary }</p>
+        <Curve />
         </header>
     </main>
     <article>
@@ -26,5 +30,32 @@ const {principles} = content
             ) )}
         </ul>
     </article>
-    <slot />
+    <div>
+        <Curve />
+        <div>
+            <blockquote>
+                <p>{principles.quote}</p>
+            </blockquote>
+        </div>
+        <Curve />
+    </div>
+    <article>
+        <slot />
+    </article>
+    <article>
+        <Curve />
+        <h2>{tools.title}</h2>
+        <p>{tools.summary}</p>
+        <ul>
+            {tools.items.map(({title, link,summary,icon})=>(
+            <li>
+                <Icon name={icon.slice(0,-4)} />
+                <h3>
+                    <a href={link}>{title}</a>
+                </h3>
+                <p>{summary}</p>
+            </li>
+            ))}
+        </ul>
+    </article>
 </BaseLayout>
