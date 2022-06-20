@@ -8,14 +8,18 @@ import { Icon } from 'astro-icon';
 // is defines the Page layout, here is where the meta data is, maybe the
 // navigation -> things that every page has in common
 
+
 const {content} = Astro.props
 const {principles, tools} = content
 console.log(tools.items)
+
 ---
     
 <BaseLayout>
+    <slot />
     <main>
         <header>
+
             <h1>{ content.title }</h1>
             <p>{ content.summary }</p>
         <Curve />
@@ -58,4 +62,12 @@ console.log(tools.items)
             ))}
         </ul>
     </article>
+
+            <div>
+                <h1>test</h1>
+                <p>test2</p>
+            </div>
+        </header>
+    </main>
+
 </BaseLayout>
