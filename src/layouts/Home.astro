@@ -11,7 +11,6 @@ import { Icon } from 'astro-icon';
 
 const {content} = Astro.props
 const {principles, tools} = content
-console.log(tools.items)
 
 ---
     
@@ -19,55 +18,51 @@ console.log(tools.items)
     <slot />
     <main>
         <header>
-
+            hi
             <h1>{ content.title }</h1>
             <p>{ content.summary }</p>
-        <Curve />
+            <Curve />
         </header>
-    </main>
-    <article>
-        <h2>{ principles.title }</h2>
-        <ul>
-            {principles.items.map(({title,summary})=>(
-                <h2>{title}</h2>
-                <p>{summary}</p>
-            ) )}
-        </ul>
-    </article>
-    <div>
-        <Curve />
+        <article>
+            <h2>{ principles.title }</h2>
+            <ul>
+                {principles.items.map(({title,summary})=>(
+                    <h2>{title}</h2>
+                    <p>{summary}</p>
+                ) )}
+            </ul>
+        </article>
         <div>
-            <blockquote>
-                <p>{principles.quote}</p>
-            </blockquote>
+            <Curve />
+            <div>
+                <blockquote>
+                    <p>{principles.quote}</p>
+                </blockquote>
+            </div>
+            <Curve />
         </div>
-        <Curve />
-    </div>
-    <article>
-        <slot />
-    </article>
-    <article>
-        <Curve />
-        <h2>{tools.title}</h2>
-        <p>{tools.summary}</p>
-        <ul>
-            {tools.items.map(({title, link,summary,icon})=>(
-            <li>
-                <Icon name={icon.slice(0,-4)} />
-                <h3>
-                    <a href={link}>{title}</a>
-                </h3>
-                <p>{summary}</p>
-            </li>
-            ))}
-        </ul>
-    </article>
-
+        <article>
+            <slot />
+        </article>
+        <article>
+            <Curve />
+            <h2>{tools.title}</h2>
+            <p>{tools.summary}</p>
+            <ul>
+                {tools.items.map(({title, link,summary,icon})=>(
+                <li>
+                    <Icon name={icon.slice(0,-4)} />
+                    <h3>
+                        <a href={link}>{title}</a>
+                    </h3>
+                    <p>{summary}</p>
+                </li>
+                ))}
+            </ul>
+        </article>
             <div>
                 <h1>test</h1>
                 <p>test2</p>
             </div>
-        </header>
     </main>
-
 </BaseLayout>
