@@ -10,6 +10,10 @@
     // Enable stricter transpilation for better output.
     "isolatedModules": true,
     // Add type definitions for our Vite runtime.
-    "types": ["vite/client"]
+    "types": [
+      "vite/client"
+    ],
+    // Astro will directly run your TypeScript code, no transpilation needed.
+    "noEmit": true
   }
 }
