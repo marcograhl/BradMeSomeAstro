@@ -25,3 +25,4 @@ vscode:
   - astro-build.astro-vscode
   - vscodevim.vim
   - bradlc.vscode-tailwindcss
+  - patbenatar.advanced-new-file
