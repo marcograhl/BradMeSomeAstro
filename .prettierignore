@@ -1,0 +1,20 @@
+
+# Ignoring this file for now due to https://github.com/withastro/compiler/issues/485
+packages/markdown/component/Markdown.astro
+
+# Deep Directories
+**/dist
+**/smoke
+**/node_modules
+**/fixtures
+**/vendor
+**/.vercel
+
+# Directories
+.github
+.changeset
+
+# Files
+README.md
+packages/webapi/mod.d.ts
+pnpm-lock.yaml
