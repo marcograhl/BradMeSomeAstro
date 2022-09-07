@@ -1,0 +1,10 @@
+  - phoenisx.cssvar
+  - csstools.postcss
+  - eamodio.gitlens-insiders
+  - mhutchie.git-graph
+  - formulahendry.auto-complete-tag
+  - gitkraken.gitkraken-authentication
+  - astro-build.astro-vscode
+  - vscodevim.vim
+  - bradlc.vscode-tailwindcss
+  - patbenatar.advanced-new-file
