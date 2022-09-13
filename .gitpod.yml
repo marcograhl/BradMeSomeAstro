@@ -7,7 +7,7 @@ tasks:
       # Get latest pnpm version, in case the custom docker image was not updated
       # Until this issue gets resolved - https://github.com/gitpod-io/gitpod/issues/12551
       curl -fsSL https://get.pnpm.io/install.sh | SHELL=`which bash` bash -
-      curl -y https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh
+      curl -s --no-install-dependencies https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh
     init: |
       pnpm install
       pnpm run build
