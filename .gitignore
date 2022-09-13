@@ -5,6 +5,9 @@ dist/
 # dependencies
 node_modules/
 
+#squash
+squashfs-root/
+
 # logs
 npm-debug.log*
 yarn-debug.log*
