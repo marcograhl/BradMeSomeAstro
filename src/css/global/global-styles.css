@@ -25,7 +25,7 @@ a {
 }
 
 p {
-    margin: 1rem 0;
+    margin: 1rem 0 !important;
 }
 
 ul {
@@ -62,4 +62,37 @@ h3 {
 
 .logos-small {
     display: none;
+}
+
+/* Page Content */
+.page-content {
+    margin: 20px 0;
+}
+
+.page-content h2,
+.page-content h3 {
+    margin: 20px 0;
+}
+
+.page-content h2 {
+    font-size: 40px;
+}
+
+.page-content h3 {
+    font-size: 25px;
+}
+
+.logos-small {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    .logos-small {
+        display: block;
+        margin: auto;
+    }
+
+    .logos {
+        display: none;
+    }
 }

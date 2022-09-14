@@ -13,6 +13,11 @@
     "types": [
       "vite/client"
     ],
+    "baseUrl": ".",
+    "paths": {
+      "@images/*": ["src/images/*"],
+      "@assets/*": ["src/assets/*"]
+    },
     // Astro will directly run your TypeScript code, no transpilation needed.
     "noEmit": true
   }

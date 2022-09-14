@@ -18,6 +18,7 @@ vscode:
     - astro-build.astro-vscode
     - esbenp.prettier-vscode
     - dbaeumer.vscode-eslint
+    - patbenatar.advanced-new-file
     
 ports:
   - port: 3000
