@@ -20,6 +20,7 @@ export default defineConfig({
 				$assets: path.resolve('./src/assets'),
 				$data: path.resolve('./src/data'),
 				$work: path.resolve('./src/work'),
+				$images: path.resolve('./src/images')
 			},
 		},
 
